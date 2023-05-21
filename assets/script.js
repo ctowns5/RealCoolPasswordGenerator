@@ -135,8 +135,6 @@ function generatePassword() {
   //Loops over the characterlength chosen, creates a new array total, and loops over the password array created that is holding all of the options that were pushed
   for (var i = 0; i < characterlength; i++) {
     var total = pwarray[Math.floor(Math.random() * pwarray.length)];
-    //Here it's showing the characters chosen in the console
-    console.log(total);
     //total var and push it to the password =[]; array, not pwarray
     password.push(total);
   }
