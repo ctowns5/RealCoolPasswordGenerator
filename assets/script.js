@@ -91,13 +91,13 @@ function start() {
   characterlength = window.prompt(
     "What character length would you like your password to be?: Choose a number between 8-128"
   );
-  //checks that the number is in the range
+  //checks that the number is in the defined range
   if (characterlength < 8 || characterlength > 128) {
     alert("Please select a number between 8 - 128");
     //returns to the start
     start();
   }
-  //this checks to see if the character input is a number, without it the generator will give a random input
+  //this checks to see if the character input is a number
   else if (isNaN(characterlength)) {
     alert("Please input a number that is between 8 - 128");
     //returns to beginning of function if it isnt a number
@@ -132,10 +132,9 @@ function generatePassword() {
   }
   //This clears the array so that previous passwords don't stay in the box and get added to.
   password.length = 0;
-  //Loops over the characterlength chosen, creates a new array total, and loops over the password array created that is holding all of the options that were pushed
   for (var i = 0; i < characterlength; i++) {
     var total = pwarray[Math.floor(Math.random() * pwarray.length)];
-    //total var and push it to the password =[]; array, not pwarray
+    //put it together and push it to the password =[]; array
     password.push(total);
   }
 }
