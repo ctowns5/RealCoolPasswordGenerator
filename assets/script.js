@@ -142,7 +142,7 @@ function generatePassword() {
 function writePassword() {
   start();
   //var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var pwText = document.querySelector("#password");
   //.join('') = removes the commas
-  passwordText.value = password.join("");
+  pwText.value = password.join("");
 }

@@ -2,7 +2,7 @@
 A password generator
 
 This password generator will guide the user via prompts to choose the length of the password desired and whether or not to include numbers, special charachters, lower or upper case letters. The screenshot below shows a 20 charachter password including all available charachter types.
-![picture of the website](./Develop/rcpg.jpg)
+![picture of the website](./assets/rcpg.jpg)
 
 ## Github repository
 
